@@ -1,0 +1,84 @@
+.container{
+    max-width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*buttons configurations*/
+.bt-group{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+button{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #DAD8DB;
+    display: inline-block;
+    margin: 1px;
+    cursor: pointer;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+button:hover{
+    background-color: #C2C2BF; 
+}
+/*it shows the current error*/
+.error-box{
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/*image container*/
+.imgs-area{
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.frame{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px #000 solid;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+/*image BG configurations*/
+.imgBg{
+    width: 200px; 
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    background-position:center center;
+    background-size: cover;
+
+    
+    border: 1px #000 solid;
+}
+/*loader*/
+.imgBg span img{
+    width: 30px;
+}
+
+/*** UTILS ***/
+/*hide loader*/
+.hide{opacity: 0}
+/*animation support*/
+.animAll{
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}

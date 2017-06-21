@@ -1,0 +1,173 @@
+/*Setting fonts up*/
+h1, h2, h3, h4, p, span, button{
+/*    font-family: "Times New Roman", Times, serif;*/
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h1, h2, h3, h4, p{ margin-bottom: 0; margin-top: 0; }
+
+p{font-size: 12px;}
+
+
+/***main banners configurations***/
+.card{
+    max-width: 600px;
+    height: 190px;
+    position:relative;
+    
+    perspective: 1000px;
+    
+}
+.flipper{transform-style: preserve-3d;}
+.flip{transform: rotateY(180deg);}
+
+#banner1, #banner2 {
+    backface-visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#banner1 {
+    z-index: 2;
+	width: 100%;
+    transform: rotateY(0deg);
+    
+}
+#banner2{transform: rotateY(180deg);}
+/***end main banners configurations***/
+
+/***all banner1 setting***/
+/*conner-new is the conner ribbon with the label 'NEW'*/
+.conner-new {
+    border-bottom: 30px solid #ffc547; 
+    border-left: 30px solid transparent; 
+    border-right: 30px solid transparent; 
+    filter: drop-shadow(0px 2px 3px #888);
+    width: 60px;
+    height: 0;
+    display: block;
+    position: absolute;
+    right: -28px;
+    top: 16px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.side-image {
+    display: block;
+    height: 190px;
+    width: 30%;
+    background: #eef;
+    float: left;
+    background-image: url('imgs/bg.png');
+    background-position:center center;
+    background-size: cover;    
+}
+
+.cd-content {
+    display: block;
+    float: right;
+    width: 70%;
+    height: 150px;
+    padding:15px;
+}
+.cd-tittle{
+    color: #00869e;
+}
+.cd-body{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.b-title { margin-top: 5px }
+/***all banner1 setting end***/
+
+
+/***banner2 will get some banner1's configurations***/
+#banner2 .cd-content{
+    width: 100%;
+    padding:20px;
+    float: none;
+}
+.scroll-txt{
+    overflow-y: scroll;
+    height: 70px;
+}
+/*** end banner2 configurations***/
+
+/*all about the buttons */
+.group-bt{
+    text-align: center;
+    margin: auto;
+}
+
+button{cursor: pointer;}
+
+.bn2-group{ text-align: left;}
+
+.bt-cd{
+    width: 32%;
+    padding: 6px;
+    border: none;
+    border-radius: 1px;
+    background-color: #DAD8DB;
+    display: inline-block;
+    margin: 1px;
+}
+.bt-cd:hover{ background-color: #C2C2BF; }
+.bt-cd:hover .loop-icon{opacity: 1}
+.loop-icon{position: absolute; max-width: 15px; transform: translateX(-20px); opacity: 0}
+
+.bt-ye{ background-color:#ffc547; }
+.bt-ye:hover{ background-color: #f5a700; }
+.bt-back{width: 90px;}
+/*end all buttons */
+
+/***Utils***/
+/*used to do automatic animations like hover or even though to help in flip animation*/
+.animAll{
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+/*make shadow with center focus*/
+.shadow-center{
+    box-shadow: 0px 0px 5px #888;
+}
+/*center divs*/
+.put-on-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*universal box sizing*/
+.bsinzing {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/***End utils***/
+
+/*less 600 pixels screen*/
+@media only screen and (max-width: 600px) {
+/*    banner1 conf*/
+    .card{height: 300px}
+    .side-image {width: 100%; height: 85px; background-image: url('imgs/bg-small.png');}
+    .cd-content{width: 100%;}
+    .conner-new{top: 102px;}
+    
+    .bt-cd{width: 48%}
+    .bt-join{width: 98%; margin-top: 5px;}
+    
+/*    banner2 conf*/
+    #banner2 .bt-cd{width: 60%}
+    #banner2 .bt-back{width: 37%}
+    .scroll-txt{height: 180px;}
+}

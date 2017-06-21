@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Exercise</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/script.js"></script>
+</head>
+<body>
+   <div class="container"><!--where will contains all content-->
+        <div class="bt-group"><!--group of buttons on the top-->
+            <button onclick="loadAnimal('cow')">Cow</button>
+            <button onclick="loadAnimal('dog')">Dog</button>
+            <button onclick="loadAnimal('giraffe')">Giraffe</button>    
+        </div>
+        
+        <div class="error-box"></div><!--it shows the current error-->
+
+        <div class="imgs-area"><!--images container-->
+            <div class="frame">
+                <div class="imgBg animAll" id="im0"><!--where the image will be a background-->
+                    <span class="hide animAll"><img src="src/preloader.gif" alt=""></span><!--preloader-->
+                </div>
+            </div>
+            <div class="frame">
+                <div class="imgBg animAll" id="im1">
+                    <span class="hide animAll"><img src="src/preloader.gif" alt=""></span>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="imgBg animAll" id="im2">
+                    <span class="hide animAll"><img src="src/preloader.gif" alt=""></span>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="imgBg animAll" id="im3">
+                    <span class="hide animAll"><img src="src/preloader.gif" alt=""></span>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="imgBg animAll" id="im4">
+                    <span class="hide animAll"><img src="src/preloader.gif" alt=""></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>   
+</body>
+</html>

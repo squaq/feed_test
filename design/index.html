@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design Markup</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="card shadow-center put-on-center">
+        <div class="flipper animAll"><!--in charge of flip animation-->
+            <div id="banner1" class=""><!--BANNER1 is the front side of the card-->
+                <div class="conner-new"><span><b>NEW</b></span></div>
+                <div class="side-image bsinzing"></div><!--Image div-->
+                <div class="cd-content bsinzing"><!--All frontside content-->
+                    <div class="cd-tittle"><!--baner2 title-->
+                        <h4>BETBRIGHT CASINO</h4><!--baner2 content-->
+                        <h2>&pound;1000 BONUS</h2>
+                    </div>
+                    <div class="cd-body">
+                        <p class="b-title"><b>JOIN</b></p>
+                        <p>Open an account with us, it takes just a few minutes</p>
+                        <p class="b-title"><b>DEPOSIT</b></p>
+                        <p>Place a single bet up to &pound;30 on eny in our Sportsbook</p>
+
+                    </div>
+
+                    <div class="group-bt"><!--all buttons-->
+                        <button class="bt-cd animAll" onclick="clickFlip()">
+                            <img src="src/imgs/loop-icon.svg" alt="" class="loop-icon animAll">
+                            <b>Ts&amp;Cs</b></button>
+                        <button class="bt-cd animAll">FIND OUT MORE</button>
+                        <button class="bt-cd bt-ye bt-join animAll">JOIN NOW</button>
+                    </div>
+
+                </div>
+            </div>
+            <div id="banner2" class=""><!--BANNER2 is the back side of the card-->
+                <div class="cd-content bsinzing">
+                    <div class="cd-tittle"><!--banner2 title-->
+                        <h3>CASINO BONUS</h3>
+                    </div>
+                    <div class="cd-body">
+                        <p class="b-title"><b>JOIN</b></p><!--banner2 content title-->
+                        <p class="scroll-txt">Lorem ipsum dolor sit amet, in utroque aliquando sea. Nam ea exerci temporibus concludaturque, esse accumsan pertinacia quo ex, et inani causae senserit pri. Sit corpora dissentiet te. Elitr tempor intellegebat eu eam, ex quo mazim vitae concludaturque. Mentitum senserit iracundia qui in, saepe pertinacia mea an, saperet reprimique vis ex. Sit porro insolens id, albucius mediocrem adversarium vel cu.
+
+    Est cibo liber in, ea repudiandae efficiantur pro. Eos ad illum postulant, platonem indoctum eos at, sed no velit simul. Te vix noster voluptatum consequuntur, pri indoctum mediocrem explicari id. Admodum dissentias ex nec, vim sensibus expetenda te. Te cum verear nonumes, te ignota patrioque mel.
+
+    Abhorreant adversarium id nec, melius fuisset at nam, id voluptua imperdiet duo. Vel epicurei apeirian an, at nibh oblique democritum eos, modus indoctum quo id. An altera partiendo democritum est, probo omittam eos ex, in quo dicam putent lucilius. Ei esse magna ceteros vix, vis cu libris erroribus scribentur. Ex justo harum vivendum his.
+
+    Id libris eleifend duo, et hinc adhuc discere vis. Mei fierent imperdiet torquatos eu, legendos vulputate cum cu. Nam nemore euismod corpora et, cu mel atomorum consectetuer, homero feugait expetendis eu ius. Vel ut vitae alterum delectus, assum voluptatum pri ea. Diam sanctus salutandi ad mea. Usu placerat expetenda explicari cu, ea adhuc epicurei torquatos mea. Appetere legendos no eam, cibo verear veritus has ad, mea lobortis deseruisse omittantur an.
+
+    Eruditi atomorum vix ut. Persius lobortis facilisis at vix, an usu legere cetero dissentias. Tollit graeco integre ea usu. Ea mei rebum accumsan, aeque similique reformidans in his.
+                    </p><!--banner2 content-->
+
+                    </div>
+
+                    <div class="group-bt bn2-group"><!--banner2 all buttons-->
+                        <button class="bt-cd bt-back animAll" onclick="clickFlip()">
+                            <img src="src/imgs/loop-icon.svg" alt="" class="loop-icon animAll">
+                            <b>BACK</b>
+                        </button>
+                        <button class="bt-cd bt-ye animAll">JOIN NOW</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        //toggle the flipe animation
+        function clickFlip(){document.querySelector('.flipper').classList.toggle('flip');}
+    </script>
+    
+</body>
+</html>
